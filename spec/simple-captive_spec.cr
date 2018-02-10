@@ -1,9 +1,8 @@
 require "./spec_helper"
 
 describe Simple::Captive do
-  # TODO: Write tests
-
-  it "works" do
-    false.should eq(true)
+  it "responses with status code 204" do
+    get "/"
+    response.status_code.should eq(204)
   end
 end
