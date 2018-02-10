@@ -3,12 +3,12 @@ Description=Simple Captive Portal Server
 
 [Service]
 Environment='KEMAL_ENV=production'
-ExecStart=/path/to/simple-captive --port 80
+ExecStart=/path/to/simple-captive --port 443 --ssl --ssl-key-file your_key_file --ssl-cert-file your_cert_file
 Restart=always
 RestartSec=10
 StandardOutput=syslog
 StandardError=syslog
-SyslogIdentifier=simple-captive-http
+SyslogIdentifier=simple-captive-https
 User=user
 Group=user
 
