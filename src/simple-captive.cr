@@ -1,6 +1,8 @@
 require "./simple-captive/*"
+require "kemal"
 
-# TODO: Write documentation for `Simple::Captive`
-module Simple::Captive
-  # TODO: Put your code here
+get "/" do |env|
+  env.response.status_code = 204
 end
+
+Kemal.run
