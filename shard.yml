@@ -1,0 +1,13 @@
+name: simple-captive
+version: 0.1.0
+
+authors:
+  - Ziyang <halczy@gmail.com>
+
+targets:
+  simple-captive:
+    main: src/simple-captive.cr
+
+crystal: 0.24.1
+
+license: MIT
