@@ -1,0 +1,16 @@
+[Unit]
+Description=Simple Captive Portal Server
+
+[Service]
+Environment='KEMAL_ENV=production'
+ExecStart=/home/halczy/simple-captive/simple-captive --port 80
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=simple-captive-http
+User=user
+Group=user
+
+[Install]
+WantedBy=multi-user.target
